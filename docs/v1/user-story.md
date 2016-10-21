@@ -1,11 +1,12 @@
-# A Year In The Life Of A Kubernetes Service Developer</H1>
+# A Year In The Life Of A Kubernetes Service Developer
 
 ## 0. Today
-I’m building a node.js chat application for me and a couple of coworkers to goof around with.  It’s really simple.  It runs
-on one container.  To get going, I simply download a node.js container onto minikube on my laptop and started coding.  I 
-want some co-workers to be able to find the chat app to connect.  So, I register it as a service in kubernetes service.  It 
-keeps track of the IP address and the port of the app for us which is nice because I keep moving the thing around.  It
-started on minikube on my laptop, but now it’s in the company’s kubernetes deployment on our OpenStack private cloud.
+I'ma developer in an enterprise environment.  For some fun in my spare time, I’m building a node.js chat application for me 
+and a couple of coworkers to goof around with.  It’s really simple.  It runs on one container.  To get going, I simply 
+download a node.js container onto minikube on my laptop and started coding.  I want some co-workers to be able to find the 
+chat app to connect.  So, I register it as a service in service in the kubernetes service catalog.  It keeps track of the IP 
+address and the port of the app for us which is nice because I keep moving the thing around.  It started on minikube on my 
+laptop, but now it’s in the company’s kubernetes deployment on our OpenStack private cloud.
 
 ## 1. Bind kubernetes whitebox services to an internal blackbox service
 The folks I had invited to use the app and were having fun with it and told people from another department about it and now 
@@ -23,7 +24,7 @@ idea where that thing is running or how the firewalls work, but whatever, I trus
 ## 4. Deploy service instance from a service types inside an org 	
 To my surprise, this app started to really take off.  People were having so much fun with it that it became part of company 
 morale.  I was assigned maintaining the app as a 20% project and even have a couple interns working with me on bug fixing.  
-I now get paid to play with this which is cool, but now I’m starting to get support tickets for it.
+I now get paid to play with my service which is cool, but now I’m starting to get support tickets for it.
 
 Now I need to maintain multiple instances of this.  I have test and staging instances.  I also have two to three versions 
 under development at any given time.  I can deploy this thing with my eyes closed, but the interns have been accidentally 
@@ -41,8 +42,8 @@ easier now even (whether from CLI or UI) and the interns are always deploying wi
 Someone in tech support just had the idea that they can use my chat app inside the call center system.  They need to connect 
 their app to my chat service the same way that I connected to the Rabbit service that IT maintains for me.  I call up the 
 Rabbit person and ask how they made that binding thing work.  Luckily, it was not hard at all.  I just did <simple workflow> 
-to make the service responsive to binding requests, deployed an instance and the customer support people were off to the 
-races.
+to make a service broker to respond to binding requests, deployed an instance and the customer support people were off to 
+the races.
 
 ## 7. Buy access to a type from the marketplace  
 ## 8. Bind a kubernetes service to a service outside kubernetes  	
@@ -87,8 +88,8 @@ is an update, I can choose whether or not to deploy it.  I’m now starting to t
 in vendor deployments vs. the benefits of fully managed services.  But I have to admit just how cool it is that I got the 
 message so quickly in such an obvious way.  They made an update and published it to the store.  Kubernetes’ record of the 
 database type in the service catalog that was created when I bought the service noticed the new store entry.  I was notified 
-me about the update immediately since I had an instance of it running and my chat app bound to that instance.  Now to do the 
-DB upgrade... 
+about the update immediately since I had an instance of it running and my chat app bound to that instance.  Now to do the DB 
+upgrade... 
 
 ## 12. Upgrade service instances to new service type version
 Wow, the version upgrade was just as easy as the “small” to “large”!   All I needed was one update command and the database 
@@ -108,7 +109,7 @@ but paradoxically, the cost went down which was nice - they solved another probl
 But, now we need to roll this out more deliberately so that the setting sticks and that new instances are deployed properly 
 as well.  It’s a good thing I got the notification or I’d have never known.  Thanks Kubernetes!
 
-## 14. Update type, create update template, and redeploy service 
+## 14. Update type, create update template, and update the service instance 
 So, I do for my service what the the database people did for me.  I created a new version, tested it out, and deployed it to 
 the catalog (without any marketplace in the way, since this is an internal app).  Now, I’m getting messages about my chat 
 app for tech support being out of date and the tech support people are calling me asking me if I knew that the app had a new 
