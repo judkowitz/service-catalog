@@ -2,11 +2,10 @@
 
 ## 0. Today
 I’m building a node.js chat application for me and a couple of coworkers to goof around with.  It’s really simple.  It runs
-on one container.  To get going, I simply download a node.js container onto minikube on my laptop and started coding.  I want 
-some co-workers to be able to find the chat app to connect.  So, I register it as a service in kubernetes service.  It keeps 
-track of the IP address and the port of the app for us which is nice because I keep moving the thing around.  It started on 
-minikube on my laptop, but now it’s in the company’s kubernetes deployment on our OpenStack private cloud.  Also, I have to 
-change the port number from time to time because of conflicts, so a centralized place to find the app is really nice. 
+on one container.  To get going, I simply download a node.js container onto minikube on my laptop and started coding.  I 
+want some co-workers to be able to find the chat app to connect.  So, I register it as a service in kubernetes service.  It 
+keeps track of the IP address and the port of the app for us which is nice because I keep moving the thing around.  It
+started on minikube on my laptop, but now it’s in the company’s kubernetes deployment on our OpenStack private cloud.
 
 ## 1. Bind kubernetes whitebox services to an internal blackbox service
 The folks I had invited to use the app and were having fun with it and told people from another department about it and now 
@@ -16,8 +15,8 @@ message queue so that I can make sure that messages are not deleted on the serve
 delivered.  I hoping to avoid the work of picking a system and learning it.  The good news is that when I was looking at the 
 kubernetes service catalog the other day, I saw a RabbitMQ instance that someone else was maintaining.  All I needed to do 
 was issue a single command to bind my chat app to the Rabbit service (and, of course, edit my software to use Rabbit).  The 
-bind call gave back credentials which automatically discovered by my chat app and it was off to the races.  I have no idea 
-where that thing is running or how the firewalls work, but whatever, I trust it since it’s maintained by corporate IT.
+bind call gave back credentials which were automatically discovered by my chat app and it was off to the races.  I have no 
+idea where that thing is running or how the firewalls work, but whatever, I trust it since it’s maintained by corporate IT.
 
 ## 2. Make a type from a kubernetes service
 ## 3. Share service types inside an org 
