@@ -1,7 +1,7 @@
 # A Year In The Life Of A Kubernetes Service Developer
 
 ## 0. Today
-I'ma developer in an enterprise environment.  For some fun in my spare time, I’m building a node.js chat application for me 
+I'm a developer in an enterprise environment.  For some fun in my spare time, I’m building a node.js chat application for me 
 and a couple of coworkers to goof around with.  It’s really simple.  It runs on one container.  To get going, I simply 
 download a node.js container onto minikube on my laptop and started coding.  I want some co-workers to be able to find the 
 chat app to connect.  So, I register it as a service in service in the kubernetes service catalog.  It keeps track of the IP 
@@ -47,15 +47,15 @@ the races.
 
 ## 7. Buy access to a type from the marketplace  
 ## 8. Bind a kubernetes service to a service outside kubernetes  	
-Those tech support people are expecting something a with a bit more enterprise capability.  They want the app to persist 
+Those tech support people are expecting something with a bit more enterprise capability.  They want the app to persist 
 information about chat logs and are are very concerned about the times we’ve lost it and brought it back empty.  This app 
 was just supposed to be for fun; I was not thinking about customer satisfaction audits.  If I could bring in a well managed 
 database without hiring a DBA, life would be great.  A friend of mine works at a database company that sells and manages 
 databases on the public cloud that we use.  She told me that if I was using Kubernetes or Cloud Foundry, this was trivial to 
 solve.  They implemented the exact same service broker model I had to implement.  I just needed to buy their database from 
 some store and with one API call they will deploy a managed database instance to the same cloud as my chat app and with a 
-second API I can bind my app to it.  I need to get permission to pay for the it, but given the support team’s urgency around 
-audits, that should not be hard.
+second API call I can bind my app to it.  I need to get permission to pay for the it, but given the support team’s urgency
+around audits, that should not be hard.
 
 ## 9. Quickly triage problems in a highly composed microservice based application  
 Everything was going well and all of the sudden things stopped working for the folks in customer support.  I needed to find 
